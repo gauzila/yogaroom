@@ -1,0 +1,117 @@
+doctype html
+html(lang='en')
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+        title YOGAROOM Strasbourg
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+        link(href='css/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+        link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+    body
+        nav.white(role='navigation')
+            .nav-wrapper.container
+                a#logo-container.brand-logo(href='#')
+                    .logo_content
+                        .logo_main
+                            .logo_bold YOGA
+                            .logo_light ROOM
+                        .logo_city Strasbourg
+                ul.right.hide-on-med-and-down
+                    li
+                        a(href='#') Accueil 22
+                    li
+                        a(href='#yogaRoom') YogaRoom
+                    li
+                        a(href='#aboutMe') Qui suis-je ?
+                    li
+                        a(href='#yoga') Yoga
+                    li
+                        a(href='#teaching') Cours
+                    li
+                        a(href='#contact') Contact
+                ul#nav-mobile.side-nav
+                    li
+                        a(href='#') Navbar Link
+                a.button-collapse(href='#', data-activates='nav-mobile')
+                    i.material-icons menu
+        #index-banner.parallax-container
+            .section.no-pad-bot
+                .container
+                    .headerLogo.center
+                        img.logo_img(src='./css/images/logo.png')
+                        .logo_content
+                            .logo_main
+                                .logo_bold YOGA
+                                .logo_light ROOM
+                            .logo_city Strasbourg
+            .parallax
+                img(src='background1.jpg', alt='Unsplashed background img 1')
+        .container
+            .section
+                .row
+                    #aboutMe.col.s12.center.scrollspy
+                        h3
+                            i.mdi-content-send.brown-text
+                        h4 Qui suis-je ?
+                        p.left-align.light
+                            | My name is Alice Hagenbach and I am 200hr certified yoga teacher. I started practicing yoga in 2009 in Paris at a Bikram studio. Since then, I have moved to Strasbourg - with my 2 daughters and my husband, and have continued practicing hot yoga, as well as Ashtanga, Vinyasa, Iyengar and Hatha yoga&mldr;A variety of styles that have all influenced my personal practice. The classes I offer focus on developing strength, flexibility, balance and well-being. Proper alignment and breathing are at the heart of every practice. - classes in English &ndash; French - Italian
+        .container
+            .section
+                .row
+                    .col.s12.m4
+                        .icon-block
+                            a(href='https://www.yogaalliance.org/', target='_blank')
+                                img(src='./css/images/yogaalliance.png')
+                    .col.s12.m4
+                        .icon-block
+                            a(href='https://www.yogaalliance.org/Credentialing/For_Teachers/RYT_200', target='_blank')
+                                img(src='./css/images/ryt.png')
+                    .col.s12.m4
+                        .icon-block
+                            a(href='http://www.yogaworks.com/', target='_blank')
+                                img(src='./css/images/yogaworks.png')
+        #yoga.parallax-container.valign-wrapper.scrollspy
+            .section.no-pad-bot
+                .container
+                    .row.center
+                        h3 Yoga
+                        p.header.col.s12.light
+                            | Yoga means union. The physical practice of yoga aims to connect body and mind through concentration and breathing. Being fully present during your practice is foundational to yoga. The series of postures that are practiced during a yoga class can vary from being vigorous to restorative depending on the student, his age, his mood, his energy level.
+            .parallax
+                img(src='background2.jpg', alt='Unsplashed background img 2')
+        .container
+            .section
+                #teaching.row.scrollspy
+                    .col.s12.center
+                        h3
+                            i.mdi-content-send.brown-text
+                        h4 Cours
+                        p.left-align.light Cours particuliers Strasbourg et alentours - Cours collectifs
+        .parallax-container.valign-wrapper
+            .section.no-pad-bot
+                .container
+                    .row.center
+                        h5.header.col.s12.light Photos
+            .parallax
+                img(src='background3.jpg', alt='Unsplashed background img 3')
+        .container
+            .section
+                #contact.row.scrollspy
+                    .col.s12.center
+                        h3
+                            i.mdi-content-send.brown-text
+                        h4 Contact Us
+                        p.left-align.light
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        footer.page-footer.teal
+            .container
+                .row
+                    .col.l6.s12
+                        h5.white-text Footer
+            .footer-copyright
+                .container
+                    | Made by
+                    a.brown-text.text-lighten-3(href='http://materializecss.com') Materialize
+        script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+        script(src='js/materialize.js')
+        script(src='js/init.js')
