@@ -1,156 +1,161 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,900'
 
-html{
-  color: #666;
-}
+mainColor = #5bc0c0
+html
+  color #666
+  font-family 'Playfair Display', serif
 
-.headerLogo{
-  margin: 40px 0;
-}
+.headerLogo
+  margin 40px 0
+  .logo_img
+    margin-bottom 10px
+  .logo_content
+    display block
+  .logo_main
+    display block
+    font-size 70px
+    line-height 55px
+  .logo_bold
+    display block
+    color #5bc0c0
+    font-weight 900
+  .logo_light
+    display block
+  .logo_city
+    display block
+    font-size: 28px;
+    letter-spacing: 17px;
+    line-height: 50px;
+    padding-left: 17px;
 
-.headerLogo .logo_img{
-  margin-bottom: 10px;
-}
+.languageSelector
+  display inline-block
+  color #999
+  margin-left 10px
+  span
+    padding 5px
+    cursor pointer
+    line-height 16px
+    border 1px solid transparent
+    &:hover
+      color #666
+    &.selected
+      color mainColor
+      border 1px solid mainColor
 
-.headerLogo .logo_content{
-  display: block;
-}
+.text_langFR
+  .tradFR
+    display inline-block
+  .tradEN
+    display none
 
-.headerLogo .logo_main{
-  display: block;
-  font-size: 70px;
-  line-height: 55px;
-}
+.text_langEN
+  .tradEN
+    display inline-block
+  .tradFR
+    display none
 
-.icon-block img{
-  display: block;
-  text-align: center;
-  margin: 0 auto 20px auto;
-}
-
-
-.headerLogo .logo_bold{
-  display: block;
-  color: #5bc0c0;
-  font-weight: 700;
-}
-
-.headerLogo .logo_light{
-  display: block;
-  font-weight: 300;
-}
-
-.headerLogo .logo_city{
-  display: block;
-  font-weight: 300;
-  font-size: 30px;
-  letter-spacing: 11px;
-  line-height: 40px;
-  padding-left: 12px;
-}
-
+.icon-block
+  padding 0 15px
+  img
+    display block
+    text-align center
+    margin 0 auto 20px auto
+  .material-icons
+    font-size inherit
 
 nav ul a,
-nav .brand-logo {
-  color: #444;
-}
+nav .brand-logo
+  color #444
 
-nav .brand-logo {
-  line-height: 0;
-  height: 64px;
-}
+nav
+  .brand-logo
+    line-height 0
+    height 64px
+    &:before
+      content ""
+      display inline-block
+      vertical-align middle
+      height 100%
+      width 0
+    .logo_main
+      display block
+      font-size 35px
+      line-height 30px
+    .logo_bold
+      display inline-block
+      color #5bc0c0
+      font-weight 700
+    .logo_light
+      display inline-block
+      font-weight 300
+    .logo_city
+      display block
+      font-weight 300
+      font-size 14px
+      letter-spacing 14px
+      line-height 20px
+      padding-left 14px
 
-nav .brand-logo:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-  width: 0;
-}
+.logo_content
+  display inline-block
+  vertical-align middle
+  color #999
+  line-height 30px
+  text-align center
+
+p
+  line-height 2rem
+
+.button-collapse
+  color #26a69a
+
+.parallax-container
+  min-height 380px
+  line-height 0
+  height auto
+  color rgba(255,255,255,.9)
+  .section
+    width 100%
+
+h3,h4
+  font-weight 900
+
+.parallax-container
+    min-height 500px
 
 
-.logo_content{
-  display: inline-block;
-  vertical-align: middle;
-  color: #999;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-}
+.bgDark
+  position absolute
+  left 0
+  top 0
+  width 100%
+  height 100%
+  background #298181
+  opacity 0.8
+  z-index 1
 
+p
+  font-size 16px
 
-nav .brand-logo .logo_main{
-  display: block;
-  font-size: 35px;
-  line-height: 30px;
-}
+@media only screen and (min-width: 1200px)
+  font-size 16px
 
-nav .brand-logo .logo_bold{
-  display: inline-block;
-  color: #5bc0c0;
-  font-weight: 700;
-}
+@media only screen and (max-width : 992px)
+  .parallax-container
+    .section
+      position absolute
+      top 40%
+  #index-banner
+    .section
+      top 10%
 
-nav .brand-logo .logo_light{
-  display: inline-block;
-  font-weight: 300;
-}
-nav .brand-logo .logo_city{
-  display: block;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 11px;
-  line-height: 14px;
-  padding-left: 12px;
-}
+@media only screen and (max-width : 600px)
+  #index-banner
+    .section
+      top 0
 
-p {
-  line-height: 2rem;
-}
+footer
+  &.page-footer
+    margin 0
 
-.button-collapse {
-  color: #26a69a;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}

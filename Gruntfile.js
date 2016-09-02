@@ -18,7 +18,8 @@ module.exports = function (grunt) {
                 options: {
                     data: {
                         debug: false
-                    }
+                    },
+                    encoding: 'UTF8',
                 },
                 files: {
                     'index.html': 'pug/index.pug',
