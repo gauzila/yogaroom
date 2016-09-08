@@ -1,161 +1,198 @@
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,900'
 
+
 mainColor = #5bc0c0
 html
-  color #666
-  font-family 'Playfair Display', serif
+    color #666
+    font-family 'Playfair Display', serif
 
 .headerLogo
-  margin 40px 0
-  .logo_img
-    margin-bottom 10px
-  .logo_content
-    display block
-  .logo_main
-    display block
-    font-size 70px
-    line-height 55px
-  .logo_bold
-    display block
-    color #5bc0c0
-    font-weight 900
-  .logo_light
-    display block
-  .logo_city
-    display block
-    font-size: 28px;
-    letter-spacing: 17px;
-    line-height: 50px;
-    padding-left: 17px;
+    margin 40px 0
+    font-family "Roboto", sans-serif
+    .logo_img
+        margin-bottom 10px
+    .logo_content
+        display block
+    .logo_main
+        display block
+        font-size 70px
+        line-height 55px
+    .logo_bold
+        display block
+        color #5bc0c0
+        font-weight 900
+    .logo_light
+        display block
+        font-weight 100
+
+    .logo_city
+        display block
+        font-size: 28px;
+        letter-spacing: 17px;
+        line-height: 50px;
+        padding-left: 17px;
 
 .languageSelector
-  display inline-block
-  color #999
-  margin-left 10px
-  span
-    padding 5px
-    cursor pointer
-    line-height 16px
-    border 1px solid transparent
-    &:hover
-      color #666
-    &.selected
-      color mainColor
-      border 1px solid mainColor
+    display inline-block
+    color #999
+    margin-left 10px
+    span
+        padding 5px
+        cursor pointer
+        line-height 16px
+        border 1px solid transparent
+        &:hover
+            color #666
+        &.selected
+            color mainColor
+            border 1px solid mainColor
+
+.ulContainer
+    ul
+        line-height 24px
 
 .text_langFR
-  .tradFR
-    display inline-block
-  .tradEN
-    display none
+    .tradFR
+        display inline-block
+    .tradEN
+        display none
+
 
 .text_langEN
-  .tradEN
-    display inline-block
-  .tradFR
-    display none
+    .tradEN
+        display inline-block
+    .tradFR
+        display none
+
 
 .icon-block
-  padding 0 15px
-  img
-    display block
-    text-align center
-    margin 0 auto 20px auto
-  .material-icons
-    font-size inherit
+    padding 0 15px
+    img
+        display block
+        text-align center
+        margin 0 auto 20px auto
+    .material-icons
+        font-size inherit
 
 nav ul a,
 nav .brand-logo
-  color #444
+    color #444
 
 nav
-  .brand-logo
-    line-height 0
-    height 64px
-    &:before
-      content ""
-      display inline-block
-      vertical-align middle
-      height 100%
-      width 0
-    .logo_main
-      display block
-      font-size 35px
-      line-height 30px
-    .logo_bold
-      display inline-block
-      color #5bc0c0
-      font-weight 700
-    .logo_light
-      display inline-block
-      font-weight 300
-    .logo_city
-      display block
-      font-weight 300
-      font-size 14px
-      letter-spacing 14px
-      line-height 20px
-      padding-left 14px
+    .brand-logo
+        font-family "Roboto", sans-serif
+        line-height 0
+        height 64px
+        &:before
+            content ""
+            display inline-block
+            vertical-align middle
+            height 100%
+            width 0
+        .logo_main
+            display block
+            font-size 35px
+            line-height 30px
+        .logo_bold
+            display inline-block
+            color #5bc0c0
+            font-weight 900
+        .logo_light
+            display inline-block
+            font-weight 100
+        .logo_city
+            display block
+            font-weight 300
+            font-size 14px
+            letter-spacing 14px
+            line-height 20px
+            padding-left 14px
 
 .logo_content
-  display inline-block
-  vertical-align middle
-  color #999
-  line-height 30px
-  text-align center
+    display inline-block
+    vertical-align middle
+    color #999
+    line-height 30px
+    text-align center
 
 p
-  line-height 2rem
+    line-height 2rem
 
 .button-collapse
-  color #26a69a
+    color #26a69a
 
 .parallax-container
-  min-height 380px
-  line-height 0
-  height auto
-  color rgba(255,255,255,.9)
-  .section
-    width 100%
+    min-height 380px
+    line-height 0
+    height auto
+    color rgba(255, 255, 255, .9)
+    .section
+        width 100%
 
-h3,h4
-  font-weight 900
+h3, h4
+    font-weight 900
 
 .parallax-container
     min-height 500px
 
-
 .bgDark
-  position absolute
-  left 0
-  top 0
-  width 100%
-  height 100%
-  background #298181
-  opacity 0.8
-  z-index 1
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background #298181
+    opacity 0.8
+    z-index 1
 
 p
-  font-size 16px
+    font-size 16px
 
-@media only screen and (min-width: 1200px)
-  font-size 16px
 
-@media only screen and (max-width : 992px)
-  .parallax-container
-    .section
-      position absolute
-      top 40%
-  #index-banner
-    .section
-      top 10%
+@media only screen and (max-width: 992px)
+    .parallax-container
+        .section
+            position absolute
+            top 40%
 
-@media only screen and (max-width : 600px)
-  #index-banner
-    .section
-      top 0
+    #index-banner
+        .section
+            top 10%
+
+@media only screen and (max-width: 600px)
+    #index-banner
+        .section
+            top 0
 
 footer
-  &.page-footer
-    margin 0
+    &.page-footer
+        margin 0
+
+
+.blockImgTextContainer
+    margin 30px 0
+.blockImgText
+    display table
+    width 100%
+    .blockImg,.blockText
+        display table-cell
+    .blockText
+        padding: 40px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 30px;
+        vertical-align middle
+    .blockImg
+        background-size cover
+        width 50%
+        overflow hidden
+        position relative
+        background-position center center
+    .textContent
+        min-height 300px
+        display inline-block
+
+@media only screen and (min-width: 993px)
+    .container
+        width 85%
 
